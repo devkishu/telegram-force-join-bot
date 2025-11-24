@@ -18,7 +18,8 @@ from telegram.ext import (
 # ============================================
 # CONFIG
 # ============================================
-BOT_TOKEN = "8573639987:AAEhOVCy5naTzCUVRBES5XnlPeKVGcFGb0g"   # <--- REPLACE THIS WITH YOUR TOKEN
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")     # <--- REPLACE THIS WITH YOUR TOKEN
 MAIN_ADMIN = 5341105960                 # <--- YOUR USER ID
 
 # REQUIRED CHANNELS
